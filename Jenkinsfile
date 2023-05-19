@@ -1,13 +1,13 @@
 pipeline{
     agent any 
-/*    environment{
-        DOCKERHUB_USERNAME = "sontungbk85"
-        APP_NAME = "webcicd"
+    environment{
+        DOCKERHUB_USERNAME = "nguyenanhtu3101"
+        APP_NAME = "anhTuCICD"
         IMAGE_TAG = "${BUILD_NUMBER}"
         IMAGE_NAME = "${DOCKERHUB_USERNAME}" + "/" + "${APP_NAME}"
-        REGISTRY_CREDS = 'dockerhub'
+        REGISTRY_CREDS = 'AnhTu_dockerHub'
     }
-	*/
+	
     stages{
         stage('Clenup workspace'){
            steps{
@@ -25,7 +25,7 @@ pipeline{
                 }
             }
         }
-/*        stage('Build Docker Image'){
+        stage('Build Docker Image'){
             steps{
                 script{
                     docker_image = docker.build "${IMAGE_NAME}"
@@ -55,13 +55,13 @@ pipeline{
                 script{
                     sh """                    
                     cat deployment.yml
-                    sed -i 's/${APP_NAME}.* /${APP_NAME}:${IMAGE_TAG}/g' deployment.yml
+                    sed -i 's/${APP_NAME}.*/${APP_NAME}:${IMAGE_TAG}/g' deployment.yml
                     cat deployment.yml
                     """
                 }
             }
         }
-		*/
+		
         stage('Push the changed deployment file to Git'){
             when {
                 expression { return currentBuild.result == 'SUCCESS' }
