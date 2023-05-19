@@ -2,7 +2,7 @@ pipeline{
     agent any 
     environment{
         DOCKERHUB_USERNAME = "nguyenanhtu3101"
-        APP_NAME = "anhTuCICD"
+        APP_NAME = "anhtucicd"
         IMAGE_TAG = "${BUILD_NUMBER}"
         IMAGE_NAME = "${DOCKERHUB_USERNAME}" + "/" + "${APP_NAME}"
         REGISTRY_CREDS = 'AnhTu_dockerHub'
