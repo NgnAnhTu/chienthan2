@@ -10,7 +10,6 @@ pipeline{
 	*/
     stages{
         stage('Clenup workspace'){
-
            steps{
                script{
                   cleanWs()
