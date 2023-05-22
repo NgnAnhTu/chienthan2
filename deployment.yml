@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: chienthan2-demo
+  name: chienthan1demo
 spec:
   replicas: 2
   selector:
@@ -21,7 +21,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: chienthan2-demo
+  name: chienthan2demo
 spec:
   type: NodePort
   ports:
