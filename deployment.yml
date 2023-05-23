@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: chienthan2
-        image: nguyenanhtu3101/chienthan2:19
+        image: nguyenanhtu3101/chienthan2:latest
         ports:
         - containerPort: 7000
 ---
