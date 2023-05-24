@@ -1,53 +1,1020 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="images/favicon.png" type="image/x-icon" rel="shortcut icon" />
-    <title>test web CICD</title>
-    <link href="css/base.css" rel="stylesheet">
-</head>
-<body>
-	
-    <div id="wrapper" class="wrapper wrapper--landing floatingDesktopTopLeft floatingMobileTopLeft">
-        <section id="frame1" class="section section--frame1 frame1 scrollFrame">
-            <div class="section__background">
-                <img data-src="images/bg1.jpg" class="desktop lazyload" alt="">
-                <img data-src="images/bg1-m.jpg" class="mobile lazyload" alt="">
-            </div>
-            <a class="btn btn-logo" href=""></a>
+<html lang="en">
+  <head>
 
-        </section>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JN2N7DXR0W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        <section id="footer" class="section section--footer scrollFrame">
-            <div class="section__background"></div>
-            <div class="section__content">
-                <div class="container">
-                   
-                        <div id="footer-content">
-								<div class="vtc-logo">
-									<img src="images/vtc.png" class="img-responsive" alt="">
-								</div>
-								<div class="footer-text f-roboto-light">
-									 - Tầng 11, Tòa nhà VTC Online<br>
-			Số 18 Tam Trinh phường Minh Khai, quận Hai Bà Trưng, Hà Nội<br>
-			SĐT : (84-4).39877470 | Email : vtcmobile@vtc.vn<br>
-			Người chịu trách nhiệm quản lý nội dung: Ông Nguyễn Viết Quang Minh.<br>
-			Giấy phép phê duyệt nội dung kịch bản trò chơi điện tử trên mạng số 99/QD-BTTTT<br>
-			<!-- <a href="https://longchientruyenky.vn/huong-dan-cai-dat-go-bo.html" target="_blank">Hướng dẫn cài đặt</a> | <a href="https://longchientruyenky.vn/dieu-khoan-su-dung.html" target="_blank">Điều khoản</a><br> -->
-								</div>
-							</div>
-                   
+  gtag('config', 'G-JN2N7DXR0W');
+</script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+	  
+    <title>Kiếm Khách Ca Ca - Tải game | Nhận giftcode</title>
+	<meta name="author" content="VTC" />
+	<meta name="description" content="Kiếm Khách Ca Ca – game nhập vai phong cách chibi kiếm hiệp với đồ họa mới mẻ tươi sáng và lối chơi nhẹ nhàng giải trí.">
+	<meta name="keywords" content="kiếm khách ca ca, kiếm khách ca ca vtc, vtc, game vtc, game nhap vai, game kiếm hiệp, game moi, game hot">
+	<meta property="og:site_name" content="Kiếm Khách Ca Ca - VTC"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://kiemkhachcaca.vn/teaser/"/>
+	<meta property="og:title" content="Kiếm Khách Ca Ca - VTC"/>
+	<meta property="og:description" content="Kiếm Khách Ca Ca – game nhập vai phong cách chibi kiếm hiệp với đồ họa mới mẻ tươi sáng và lối chơi nhẹ nhàng giải trí."/>
+	<meta property="og:image:type" content="image/jpeg"/>
+	<meta property="og:image" content="https://kiemkhachcaca.vn/teaser/sharefb.jpg"/>
+	  
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <!-- nav left-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- menu right-->
+    <script type="text/javascript" src="js/fixedbox.js"></script>
+    <!--popup-->
+    <link rel="stylesheet" href="css/lity.min.css" />
+    <script type="text/javascript" src="js/lity.min.js"></script>
+
+    <!-- nhan vat--->
+    <link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+
+    <!--- tinh nang ---->
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+
+    <!-- Css của loading trước khi lấy code -->
+    <style type="text/css">
+      #loader {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.75)
+          url(//kiemkhachcaca.vn/api/loading.gif) no-repeat center center;
+        z-index: 10000;
+      }
+    </style>
+    <!-- end css-->
+    <!-- JS xử lý -->
+    <script src="//kiemkhachcaca.vn/api/lib.js?vesion=1.0.2"></script>
+    <!-- end js-->
+  </head>
+
+  <body>
+    <!-- frame1-->
+    <section class="frame1 d-none d-lg-block frame" id="home">
+      <div class="wrap wrap-ani">
+        <div class="p-a full-img slogan-icon slogan-ani">
+          <img
+            src="images/p1_slogan.png"
+            alt="Cưỡi lừa ngạo thiên hạ, vung kiếm náo giang hồ"
+          />
+        </div>
+
+        <ul class="p-r download-list f-l">
+          <li class="download-item1 down">
+            <a href="#" class="p-a fd icons t" id="ios"></a>
+          </li>
+          <li class="download-item2 down">
+            <a href="#" class="p-a fd icons delay-1 t" id="android"></a>
+          </li>
+        </ul>
+        <div class="p-a full-img f1_play down">
+          <a
+            href="https://www.youtube.com/watch?v=WLqOzPljloo&feature=youtu.be"
+            data-lity
+            ><img class="pulse" src="images/clip.png" alt=""
+          /></a>
+        </div>
+      </div>
+      <a class="logo" href="#"><img src="images/logo.png" alt="" /></a>
+      <ul class="top-menu">
+        <li>
+          <a href="#" target="_blank" id="home"
+            ><img src="images/icon-home.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="#" target="_blank" id="fanpage"
+            ><img src="images/icon-face.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="#" target="_blank" id="youtube"
+            ><img src="images/icon-youtube.png" alt=""
+          /></a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="frame1" class="d-block d-lg-none">
+      <div class="wrap wrap-ani">
+        <div class="p-a full-img slogan-icon slogan-ani">
+          <img
+            src="images/p1_slogan.png"
+            alt="Cưỡi lừa ngạo thiên hạ, vung kiếm náo giang hồ"
+          />
+        </div>
+
+        <div class="p-a full-img f1_play down">
+          <a
+            href="https://www.youtube.com/watch?v=WLqOzPljloo&feature=youtu.be"
+            data-lity
+            ><img class="pulse" src="images/clip.png" alt=""
+          /></a>
+        </div>
+      </div>
+      <a class="logo" href="#"><img src="images/logo.png" alt="" /></a>
+      <ul class="top-menu">
+        <li>
+          <a href="#" target="_blank" id="home"
+            ><img src="images/icon-home.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="#" target="_blank" id="fanpage"
+            ><img src="images/icon-face.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="#" target="_blank" id="youtube"
+            ><img src="images/icon-youtube.png" alt=""
+          /></a>
+        </li>
+      </ul>
+      <img
+        src="images/bg-frame1-m.jpg"
+        class="w-100 d-block d-lg-none"
+        alt=""
+      />
+    </section>
+
+    <!-- frame2-->
+
+    <section id="nhanvat" class="frame">
+      <div class="wrap wrap-ani">
+        <div class="p-a full-img f2_t up f-l">
+          <img
+            src="images/p2_title.png"
+            alt="Hóa thân thiếu niên chiêu mộ chiến thần"
+          />
+        </div>
+
+        <div class="p-a class down">
+          <div class="swiper-container" id="classnv">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="nhanvat p-a ani"
+                  swiper-animate-effect="bounceInLeft"
+                  swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0s"
+                >
+                  <img class="tethien" src="images/char/tethien.png" alt="" />
+                  <div class="nv_title">
+                    <img src="images/p2_title_char.png" alt="" />
+                  </div>
+                  <div class="nv_title_text">Tề Thiên</div>
                 </div>
+                <div
+                  class="info p-a ani"
+                  swiper-animate-effect="bounceInRight"
+                  swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0s"
+                >
+                  <a
+                    href="https://www.youtube.com/watch?v=uZeDT1Ble9w&feature=youtu.be"
+                    data-lity
+                    ><img class="pulse" src="images/clip2.png" alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="nhanvat p-a ani"
+                  swiper-animate-effect="bounceInLeft"
+                  swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0s"
+                >
+                  <img class="tethien" src="images/char/xivuu.png" alt="" />
+                  <div class="nv_title">
+                    <img src="images/p2_title_char.png" alt="" />
+                  </div>
+                  <div class="nv_title_text">Xi vưu</div>
+                </div>
+                <div
+                  class="info p-a ani"
+                  swiper-animate-effect="bounceInRight"
+                  swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0s"
+                >
+                  <a
+                    href="https://www.youtube.com/watch?v=uZeDT1Ble9w&feature=youtu.be"
+                    data-lity
+                    ><img src="images/clip2.png" alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="nhanvat p-a ani"
+                  swiper-animate-effect="bounceInLeft"
+                  swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0s"
+                >
+                  <img
+                    class="tethien"
+                    src="images/char/cuu-thien-huyen-nu.png"
+                    alt=""
+                  />
+                  <div class="nv_title">
+                    <img src="images/p2_title_char.png" alt="" />
+                  </div>
+                  <div class="nv_title_text">Cửu Thiên Huyền Nữ</div>
+                </div>
+                <div
+                  class="info p-a ani"
+                  swiper-animate-effect="bounceInRight"
+                  swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0s"
+                >
+                  <a
+                    href="https://www.youtube.com/watch?v=uZeDT1Ble9w&feature=youtu.be"
+                    data-lity
+                    ><img src="images/clip2.png" alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="nhanvat p-a ani"
+                  swiper-animate-effect="bounceInLeft"
+                  swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0s"
+                >
+                  <img
+                    class="tethien"
+                    src="images/char/duong-tien.png"
+                    alt=""
+                  />
+                  <div class="nv_title">
+                    <img src="images/p2_title_char.png" alt="" />
+                  </div>
+                  <div class="nv_title_text">Dương Tiễn</div>
+                </div>
+                <div
+                  class="info p-a ani"
+                  swiper-animate-effect="bounceInRight"
+                  swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0s"
+                >
+                  <a
+                    href="https://www.youtube.com/watch?v=uZeDT1Ble9w&feature=youtu.be"
+                    data-lity
+                    ><img src="images/clip2.png" alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="nhanvat p-a ani"
+                  swiper-animate-effect="bounceInLeft"
+                  swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0s"
+                >
+                  <img
+                    class="tethien"
+                    src="images/char/hoa-moc-lan.png"
+                    alt=""
+                  />
+                  <div class="nv_title">
+                    <img src="images/p2_title_char.png" alt="" />
+                  </div>
+                  <div class="nv_title_text">Hoa Mộc Lan</div>
+                </div>
+                <div
+                  class="info p-a ani"
+                  swiper-animate-effect="bounceInRight"
+                  swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0s"
+                >
+                  <a
+                    href="https://www.youtube.com/watch?v=uZeDT1Ble9w&feature=youtu.be"
+                    data-lity
+                    ><img src="images/clip2.png" alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="nhanvat p-a ani"
+                  swiper-animate-effect="bounceInLeft"
+                  swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0s"
+                >
+                  <img class="tethien" src="images/char/lu-bo.png" alt="" />
+                  <div class="nv_title">
+                    <img src="images/p2_title_char.png" alt="" />
+                  </div>
+                  <div class="nv_title_text">
+                    Lữ<br />
+                    Bố
+                  </div>
+                </div>
+                <div
+                  class="info p-a ani"
+                  swiper-animate-effect="bounceInRight"
+                  swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0s"
+                >
+                  <a
+                    href="https://www.youtube.com/watch?v=uZeDT1Ble9w&feature=youtu.be"
+                    data-lity
+                    ><img src="images/clip2.png" alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="nhanvat p-a ani"
+                  swiper-animate-effect="bounceInLeft"
+                  swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0s"
+                >
+                  <img class="tethien" src="images/char/natra.png" alt="" />
+                  <div class="nv_title">
+                    <img src="images/p2_title_char.png" alt="" />
+                  </div>
+                  <div class="nv_title_text">
+                    Na<br />
+                    Tra
+                  </div>
+                </div>
+                <div
+                  class="info p-a ani"
+                  swiper-animate-effect="bounceInRight"
+                  swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0s"
+                >
+                  <a
+                    href="https://www.youtube.com/watch?v=uZeDT1Ble9w&feature=youtu.be"
+                    data-lity
+                    ><img src="images/clip2.png" alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="nhanvat p-a ani"
+                  swiper-animate-effect="bounceInLeft"
+                  swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0s"
+                >
+                  <img class="tethien" src="images/char/phuchi.png" alt="" />
+                  <div class="nv_title">
+                    <img src="images/p2_title_char.png" alt="" />
+                  </div>
+                  <div class="nv_title_text">Phục Hi</div>
+                </div>
+                <div
+                  class="info p-a ani"
+                  swiper-animate-effect="bounceInRight"
+                  swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0s"
+                >
+                  <a
+                    href="https://www.youtube.com/watch?v=uZeDT1Ble9w&feature=youtu.be"
+                    data-lity
+                    ><img src="images/clip2.png" alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="nhanvat p-a ani"
+                  swiper-animate-effect="bounceInLeft"
+                  swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0s"
+                >
+                  <img class="tethien" src="images/char/quanvu.png" alt="" />
+                  <div class="nv_title">
+                    <img src="images/p2_title_char.png" alt="" />
+                  </div>
+                  <div class="nv_title_text">Quan Vũ</div>
+                </div>
+                <div
+                  class="info p-a ani"
+                  swiper-animate-effect="bounceInRight"
+                  swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0s"
+                >
+                  <a
+                    href="https://www.youtube.com/watch?v=uZeDT1Ble9w&feature=youtu.be"
+                    data-lity
+                    ><img src="images/clip2.png" alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="nhanvat p-a ani"
+                  swiper-animate-effect="bounceInLeft"
+                  swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0s"
+                >
+                  <img class="tethien" src="images/char/trieuvan.png" alt="" />
+                  <div class="nv_title">
+                    <img src="images/p2_title_char.png" alt="" />
+                  </div>
+                  <div class="nv_title_text">Triệu Vân</div>
+                </div>
+                <div
+                  class="info p-a ani"
+                  swiper-animate-effect="bounceInRight"
+                  swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0s"
+                >
+                  <a
+                    href="https://www.youtube.com/watch?v=uZeDT1Ble9w&feature=youtu.be"
+                    data-lity
+                    ><img src="images/clip2.png" alt=""
+                  /></a>
+                </div>
+              </div>
             </div>
-        </section>
+            <!--<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>-->
+          </div>
+          <ul class="role_tab">
+            <li id="role_tab1" class="on">Tề Thiên</li>
+            <li id="role_tab2">Xivuu</li>
+            <li id="role_tab3">Cửu Thiên Huyền Nữ</li>
+            <li id="role_tab4">Dương Tiễn</li>
+            <li id="role_tab5">Hoa Mộc Lan</li>
+            <li id="role_tab6">Lữ Bố</li>
+            <li id="role_tab7">Na Tra</li>
+            <li id="role_tab8">Phục Hi</li>
+            <li id="role_tab9">Quan Vũ</li>
+            <li id="role_tab10">Triệu Vân</li>
+          </ul>
+        </div>
+      </div>
+      <div class="frame2 w-100 d-none d-lg-block"></div>
+      <img
+        src="images/bg-frame2-m.jpg"
+        class="w-100 d-block d-lg-none"
+        alt=""
+      />
+    </section>
 
+    <!-- frame3-->
+    <section class="frame3 d-none d-lg-block frame" id="tromong">
+      <div class="wrap wrap-ani c">
+        <div class="f3-list">
+          <div class="p-r f3-item up f-l">
+            <div class="p-a full-img f3-ingame right">
+              <img src="images/p3_ingame.png" alt="" />
+            </div>
+            <div class="p-a full-img f3-nv right">
+              <img src="images/p3_nv.png" alt="" />
+            </div>
+            <div class="p-a full-img f3_t up">
+              <img
+                src="images/p3_title.png"
+                alt="Hóa thân thiếu niên chiêu mộ chiến thần"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="frame3" class="d-block d-lg-none">
+      <div class="wrap wrap-ani c">
+        <div class="f3-list">
+          <div class="p-r f3-item up f-l">
+            <div class="p-a full-img f3-nv right">
+              <img src="images/p3_nv.png" alt="" />
+            </div>
+            <div class="p-a full-img f3-ingame right">
+              <img src="images/p3_ingame.png" alt="" />
+            </div>
+            <div class="p-a full-img f3_t up">
+              <img
+                src="images/p3_title.png"
+                alt="Online nhận vip 3, trợ mộng lên vip6"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="images/bg-frame3-m.jpg"
+        class="w-100 d-block d-lg-none"
+        alt=""
+      />
+    </section>
+
+    <!-- frame4-->
+    <section id="tinhnang" class="frame">
+      <div class="wrap wrap-ani c">
+        <div class="p-a full-img f4_t up f-l">
+          <img src="images/p4_title.png" alt="Trải nghiệm tính năng hấp dẫn" />
+        </div>
+        <div class="p-a tinhnang up">
+          <div class="tieu-diem">
+            <div class="container11">
+              <div class="slide-tieudiem">
+                <div class="item-slide-tieudiem">
+                  <img src="images/p4_img1.png" alt="" />
+                </div>
+                <div class="item-slide-tieudiem">
+                  <img src="images/p4_img2.png" alt="" />
+                </div>
+                <div class="item-slide-tieudiem">
+                  <img src="images/p4_img3.png" alt="" />
+                </div>
+                <div class="item-slide-tieudiem">
+                  <img src="images/p4_img4.png" alt="" />
+                </div>
+                <div class="item-slide-tieudiem">
+                  <img src="images/p4_img5.png" alt="" />
+                </div>
+                <div class="item-slide-tieudiem">
+                  <img src="images/p4_img6.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="frame4 w-100 d-none d-lg-block"></div>
+      <div id="scrollingDiv" style="position: fixed; left: 30%; top: 10px;z-index: 99;"><img src="./18+.jpg" class="responsive-img" alt=""></div>
+      <img
+        src="images/bg-frame4-m.jpg"
+        class="w-100 d-block d-lg-none"
+        alt=""
+      />
+    </section>
+
+    <!-- frame4
+	<section class="frame4 d-none d-lg-block frame" id="tinhnang">
+		dádd
+	</section>
+	<section id="frame4" class="d-block d-lg-none">
+		fffff
+		<img src="images/bg-frame4-m.jpg" class="w-100 d-block d-lg-none" alt="">
+	</section> 
+-->
+    <!-- frame5-->
+    <section class="frame5 d-none d-lg-block frame" id="duatop">
+      <div class="wrap wrap-ani c">
+        <div class="f5-list">
+          <div class="p-r f5-item up f-l">
+            <div class="p-a full-img f5-nv right">
+              <img src="images/p5_nv.png" alt="" />
+            </div>
+            <div class="p-a full-img f5_t up">
+              <img src="images/p5_title.png" alt="Đua top nhận cực phẩm" />
+            </div>
+            <div class="p-a full-img f5-but1 up">
+              <a href="javascript:void(0)" class="show-duatop"
+                ><img class="fd" src="images/p5_but1.png" alt=""
+              /></a>
+            </div>
+            <div class="p-a full-img f5-but2 up">
+              <a href="javascript:void(0)" class="show-duatop"
+                ><img class="fd delay-1" src="images/p5_but2.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="frame5" class="d-block d-lg-none">
+      <div class="wrap wrap-ani c">
+        <div class="f5-list">
+          <div class="p-r f5-item up f-l">
+            <div class="p-a full-img f5_t up">
+              <img src="images/p5_title.png" alt="Đua top nhận cực phẩm" />
+            </div>
+            <div class="p-a full-img f5-but1 up">
+              <a href="javascript:void(0)" class="show-duatop"
+                ><img class="fd" src="images/p5_but11.png" alt=""
+              /></a>
+            </div>
+            <div class="p-a full-img f5-but2 up">
+              <a href="javascript:void(0)" class="show-duatop"
+                ><img class="fd delay-1" src="images/p5_but22.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="images/bg-frame5-m.jpg"
+        class="w-100 d-block d-lg-none"
+        alt=""
+      />
+    </section>
+
+    <!-- frame6-->
+    <section class="frame6 d-none d-lg-block frame" id="nhanqua">
+      <div class="wrap wrap-ani c">
+        <div class="f6-list">
+          <div class="p-r f6-item up f-l">
+            <div class="p-a full-img f6-nv up">
+              <img src="images/p6_nv.png" alt="" />
+            </div>
+            <div class="p-a full-img f6_t up">
+              <img src="images/p6_title.png" alt="Báo danh nhận quà" />
+            </div>
+            <div class="p-a full-img f6-but down">
+              <a href="javascript:void(0)" class="show-login"
+                ><img class="fd" src="images/p6_but.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="frame6" class="d-block d-lg-none">
+      <div class="wrap wrap-ani c">
+        <div class="f6-list">
+          <div class="p-r f6-item up f-l">
+            <div class="p-a full-img f6-nv up">
+              <img src="images/p6_nv.png" alt="" />
+            </div>
+            <div class="p-a full-img f6_t up">
+              <img src="images/p6_title.png" alt="Báo danh nhận quà" />
+            </div>
+            <div class="p-a full-img f6-but down">
+              <a href="javascript:void(0)" class="show-login"
+                ><img class="fd" src="images/p6_but.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="images/bg-frame6-m.jpg"
+        class="w-100 d-block d-lg-none"
+        alt=""
+      />
+    </section>
+
+    <!-- FOOTER start -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-lg-5">
+            <img src="images/logovtc.png" class="img-fluid footer_logo" />
+          </div>
+        </div>
+        <div class="infofooter">
+          Copyright 2015 VTC Mobile. All rights reserved<br />
+          Công ty cổ phần VTC Dịch Vụ Di Động - Tầng 11, Tòa nhà VTC Online<br />
+          Số 18 Tam Trinh, phường Minh Khai, quận Hai Bà Trưng, Hà Nội<br />
+          SĐT : (84-4).39877470 | Email : vtcmobile@vtc.vn<br />
+          Người chịu trách nhiệm quản lý nội dung: Ông Nguyễn Viết Quang
+          Minh.<br />
+          Giấy phép phê duyệt nội dung kịch bản trò chơi điện tử trên mạng số
+          913/QĐ-BTTT<br />
+          <a
+            target="_blank"
+            href="//kiemkhachcaca.vn/huong-dan-cai-dat-go-bo.html"
+            >Hướng dẫn cài đặt</a
+          >
+          |
+          <a
+            target="_blank"
+            href="//kiemkhachcaca.vn/dieu-khoan-su-dung.html"
+            >Điều khoản</a
+          ><br />
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER.End -->
+
+    <!-- Nav-left -->
+    <div class="nav_left">
+      <ul>
+        <li class="nav_left_link active">
+          <a class="a100" href="#home">1</a>
+        </li>
+        <li class="nav_left_link">
+          <a class="a100" href="#nhanvat">2</a>
+        </li>
+        <li class="nav_left_link">
+          <a class="a100" href="#tromong">3</a>
+        </li>
+        <li class="nav_left_link">
+          <a class="a100" href="#tinhnang">4</a>
+        </li>
+        <li class="nav_left_link">
+          <a class="a100" href="#duatop">5</a>
+        </li>
+        <li class="nav_left_link">
+          <a class="a100" href="#nhanqua">6</a>
+        </li>
+      </ul>
     </div>
-	
-    <script type="text/javascript" src="js/1.promotion.bundle.js"></script>
-    <script type="text/javascript" src="js/promotion.bundle.js"></script>
 
-</body>
+    <!-- Fixed box -->
+    <div class="nav_right open">
+      <p class="text_center qr_code">
+        <img class="lazy" alt="" src="images/qrcode.jpg" />
+      </p>
+      <ul class="buttai">
+        <li class="app-info__install--pc button-appstore">
+          <a
+            class=""
+            id="android"
+            target="_blank"
+            href="#"
+            title="Tải Googleplay"
+          ></a>
+        </li>
+        <li class="app-info__install--pc button-googleplay">
+          <a
+            class=""
+            id="ios"
+            target="_blank"
+            href="#"
+            title="Tải Appstore"
+          ></a>
+        </li>
+        <li class="app-info__install--pc button-apk">
+          <a class="" id="pc" target="_blank" href="#" title="Tải APK"></a>
+        </li>
+        <li class="app-info__install--pc button-nt">
+          <a
+            class=""
+            id="purchase"
+            target="_blank"
+            href="#"
+            title="Nạp Thẻ"
+          ></a>
+        </li>
+        <li class="app-info__install--pc button-gift">
+          <a
+            href="javascript:void(0)"
+            id="giftcode"
+            class="show-login"
+            title="Giftcode"
+          ></a>
+        </li>
+      </ul>
+      <span class="i_control"></span>
+    </div>
+    <!-- End Fixed box -->
 
+    <!---nav---->
+    <div class="menu">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xs-12 col-md-7">
+            <div class="menu_item">
+              <a href="#" id="download" target="_blank"
+                ><img
+                  src="images/taigame.png"
+                  onmouseover="this.src='images/taigame.png';"
+                  onmouseout="this.src='images/taigame.png';"
+                  class="img1"
+                  alt=""
+              /></a>
+
+              <a href="#"
+                ><img
+                  src="images/iconapp.png"
+                  onmouseover="this.src='images/iconapp.png';"
+                  onmouseout="this.src='images/iconapp.png';"
+                  class="img2"
+                  alt=""
+              /></a>
+
+              <a href="#" id="giftcode" class="show-login" title="Giftcode"
+                ><img
+                  src="images/giftcode.png"
+                  onmouseover="this.src='images/giftcode.png';"
+                  onmouseout="this.src='images/giftcode.png';"
+                  class="img1"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- nav left-->
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <!-- hieu ung html5-->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/swiper2.min.js"></script>
+    <script type="text/javascript" src="js/animation.js"></script>
+
+    <!-- Frame nhan vat -->
+    <script type="text/javascript" src="js/jq_183.js"></script>
+    <script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
+    <script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        var zhiyeSwiper = new Swiper("#classnv", {
+          effect: "fade",
+          fade: {
+            crossFade: true,
+          },
+          loop: true,
+          prevButton: ".swiper-button-prev",
+          nextButton: ".swiper-button-next",
+          onInit: function (swiper) {
+            swiperAnimateCache(swiper);
+            swiperAnimate(swiper);
+          },
+          onTransitionEnd: function (swiper) {
+            swiperAnimate(swiper);
+            $(".role_tab li").removeClass("on");
+            $(".role_tab li").eq(swiper.realIndex).addClass("on");
+          },
+        });
+        $(".role_tab li").each(function (i) {
+          $(this).click(function () {
+            $(".role_tab li").removeClass("on");
+            $(this).addClass("on");
+            zhiyeSwiper.slideTo(i + 1);
+          });
+        });
+      });
+    </script>
+
+    <!-- Frame tinh nang -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // sllick slider tieu diem
+        var slide_tieudiem = $(".slide-tieudiem");
+        slide_tieudiem
+          .on("init", function (event, slick, currentSlide) {
+            var cur = $(slick.$slides[slick.currentSlide]),
+              next = cur.next(),
+              prev = cur.prev();
+            prev.addClass("slick-sprev");
+            next.addClass("slick-snext");
+            cur.removeClass("slick-snext").removeClass("slick-sprev");
+            slick.$prev = prev;
+            slick.$next = next;
+          })
+          .on("beforeChange", function (event, slick, currentSlide, nextSlide) {
+            // console.log('beforeChange');
+            var cur = $(slick.$slides[nextSlide]);
+
+            slick.$prev.removeClass("slick-sprev");
+            slick.$next.removeClass("slick-snext");
+            (next = cur.next()), (prev = cur.prev());
+            prev.prev();
+            prev.next();
+            prev.addClass("slick-sprev");
+            next.addClass("slick-snext");
+            slick.$prev = prev;
+            slick.$next = next;
+            cur.removeClass("slick-next").removeClass("slick-sprev");
+          });
+
+        slide_tieudiem.slick({
+          cssEase: "ease-out",
+          // speed: 600,
+          arrows: false,
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 4000,
+          // appendDots: $('.process-main'),
+          // dotsClass: 'tieudiem-dots',
+          focusOnSelect: true,
+          infinite: true,
+          centerMode: true,
+          slidesPerRow: 1,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: "0",
+          swipe: true,
+          customPaging: function (slider, i) {
+            return "";
+          },
+          /*infinite: false,*/
+        });
+      });
+    </script>
+
+    <!-- popup giftcode -->
+    <div class="popup popup-small" id="popup-login" style="display: none;">
+      <div class="content-popup">
+        <div class="wrapper-popup">
+          <div class="detail-login">
+            <div class="form-ctr">
+              <input
+                class="text text-center"
+                type="text"
+                name="sdt"
+                id="txtPhone"
+                maxlength="11"
+                placeholder="Nhập Số Điện Thoại"
+              />
+            </div>
+            <ul class="link-dkdn">
+              <li>
+                <button class="button" type="button" id="send_mobile"></button>
+              </li>
+            </ul>
+          </div>
+          <a class="close-content1"></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- popup duatop -->
+    <div class="popup popup-small" id="popup-duatop" style="display: none;">
+      <div class="content-popup">
+        <div class="wrapper-popup1">
+          <div class="detail-login1">
+            Thông tin đua top sẽ cập nhật sớm trên fanpage, Thiếu Hiệp theo dõi
+            tại fanpage Kiếm Khách Ca Ca nhé!
+          </div>
+          <a class="close-content1"></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal giftcode-->
+    <div
+      class="modal fade"
+      id="mess"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true" style="float: right;">&times;</span>
+          </button>
+          <div class="modal-body mess-body" style="text-align: center;"></div>
+        </div>
+      </div>
+    </div>
+    <!--  Loading giftcode -->
+    <div id="loader"></div>
+
+    <!-- popup--->
+
+    <script type="text/javascript" src="js/bootstrap.min.js?v=1.2.6"></script>
+    <script>
+      $(document).ready(function () {
+        $(".show-login").click(function () {
+          $("#popup-login").fadeIn();
+        });
+        $(".show-duatop").click(function () {
+          $("#popup-duatop").fadeIn();
+        });
+        $(".close-content").click(function () {
+          $(".popup1").fadeOut();
+        });
+        $(".close-content1").click(function () {
+          $(".popup").fadeOut();
+        });
+      });
+    </script>
+    <script>
+      $().ready(function() {
+          var $scrollingDiv = $("#scrollingDiv");
+
+          $(window).scroll(function(){            
+              $scrollingDiv
+                  .stop();
+                           
+          });
+      });
+  </script>
+  </body>
 </html>
-
