@@ -17,12 +17,12 @@ pipeline{
                }
            }
         }
-        stage('checkout code form github'){
+        stage('checkout code from github'){
             steps{
                 script{
                     git credentialsId: 'github',
                     url: 'https://github.com/NgnAnhTu/chienthan2.git',
-                    branch: 'main'
+                    branch: 'main',
 					extensions: [[$class: 'CloneOption', timeout: 120]],
                 }
             }
