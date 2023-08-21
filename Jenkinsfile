@@ -23,6 +23,7 @@ pipeline{
                     git credentialsId: 'github',
                     url: 'https://github.com/NgnAnhTu/chienthan2.git',
                     branch: 'main'
+					extensions: [[$class: 'CloneOption', timeout: 120]],
                 }
             }
         }
