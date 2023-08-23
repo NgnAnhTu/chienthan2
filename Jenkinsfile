@@ -6,7 +6,7 @@ pipeline{
         APP_NAME = "anhtucicd"
         IMAGE_TAG = "${BUILD_NUMBER}"
         IMAGE_NAME = "${DOCKERHUB_USERNAME}" + "/" + "${APP_NAME}"
-        REGISTRY_CREDS = 'AnhTu_dockerHub'
+        REGISTRY_CREDS = 'dockerHub'
     }
 	
     stages{
